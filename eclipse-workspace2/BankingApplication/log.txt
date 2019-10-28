@@ -1,0 +1,481 @@
+2019-10-23 13:57:57 INFO  UserDaoSQL:77 - failed to find users from database
+2019-10-23 13:59:06 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 13:59:06 INFO  ConnectionUtil:17 - bank
+2019-10-23 13:59:06 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 13:59:06 INFO  UserDaoSQL:77 - failed to find users from database
+2019-10-23 13:59:45 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 13:59:45 INFO  ConnectionUtil:17 - bank
+2019-10-23 13:59:45 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 13:59:45 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:00:13 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:00:13 INFO  ConnectionUtil:17 - pokemon
+2019-10-23 14:00:13 INFO  ConnectionUtil:18 - p4ssw0rd
+2019-10-23 14:00:13 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:00:32 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:00:32 INFO  ConnectionUtil:17 - 
+2019-10-23 14:00:32 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:00:32 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:00:38 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:00:38 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:00:38 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:00:38 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:07:39 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:07:39 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:07:39 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:07:39 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:07 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:07 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:07 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:07 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:15 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:15 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:15 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:15 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:16 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:16 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:16 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:16 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:17 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:17 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:17 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:17 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:18 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:18 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:18 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:18 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:19 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:19 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:19 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:19 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:20 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:20 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:20 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:20 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:20 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:20 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:20 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:20 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:20 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:20 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:20 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:20 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:20 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:20 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:20 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:20 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:20 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:20 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:20 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:20 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:20 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:21 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:21 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:21 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:21 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:21 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:21 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:21 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:21 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:21 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:21 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:21 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:21 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:21 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:21 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:21 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:21 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:21 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:21 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:21 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:21 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:21 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:21 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:21 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:11:22 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:11:22 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:11:22 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:11:22 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:12:29 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:12:29 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:12:29 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:12:29 ERROR UserDaoSQL:77 - failed to find users from database
+2019-10-23 14:14:32 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:14:32 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:14:32 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:14:33 INFO  UserDaoSQL:62 - making sql statement
+2019-10-23 14:14:33 INFO  UserDaoSQL:64 - making prepared statement
+2019-10-23 14:14:33 INFO  UserDaoSQL:66 - executing statement
+2019-10-23 14:14:33 INFO  UserDaoSQL:68 - making user list
+2019-10-23 14:14:33 INFO  UserDaoSQL:70 - adding to user list
+2019-10-23 14:14:58 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:14:58 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:14:58 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:14:59 INFO  UserDaoSQL:61 - making sql statement
+2019-10-23 14:14:59 INFO  UserDaoSQL:63 - making prepared statement
+2019-10-23 14:14:59 INFO  UserDaoSQL:65 - executing statement
+2019-10-23 14:14:59 INFO  UserDaoSQL:67 - making user list
+2019-10-23 14:14:59 INFO  UserDaoSQL:69 - adding to user list
+2019-10-23 14:35:09 INFO  TestDriver:17 - testing userList
+2019-10-23 14:35:09 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:35:09 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:35:09 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:35:10 INFO  UserDaoSQL:98 - making sql statement
+2019-10-23 14:35:10 INFO  UserDaoSQL:100 - making prepared statement
+2019-10-23 14:35:10 INFO  UserDaoSQL:102 - executing statement
+2019-10-23 14:35:10 INFO  UserDaoSQL:104 - making user list
+2019-10-23 14:35:10 INFO  UserDaoSQL:106 - adding to user list
+2019-10-23 14:35:10 INFO  TestDriver:23 - testing findByUserName
+2019-10-23 14:35:10 INFO  ConnectionUtil:16 - jdbc:oracle:thin:@demos-1909.ckgbgyuehmou.us-east-2.rds.amazonaws.com:1521:orcl
+2019-10-23 14:35:10 INFO  ConnectionUtil:17 - bank
+2019-10-23 14:35:10 INFO  ConnectionUtil:18 - pa55w0rd
+2019-10-23 14:37:07 INFO  TestDriver:17 - testing userList
+2019-10-23 14:37:07 INFO  UserDaoSQL:98 - making sql statement
+2019-10-23 14:37:07 INFO  UserDaoSQL:100 - making prepared statement
+2019-10-23 14:37:08 INFO  UserDaoSQL:102 - executing statement
+2019-10-23 14:37:08 INFO  UserDaoSQL:104 - making user list
+2019-10-23 14:37:08 INFO  UserDaoSQL:106 - adding to user list
+2019-10-23 14:37:08 INFO  TestDriver:23 - testing findByUserName
+2019-10-23 14:37:46 INFO  TestDriver:17 - testing userList
+2019-10-23 14:37:47 INFO  TestDriver:23 - testing findByUserName
+2019-10-23 14:39:09 INFO  TestDriver:17 - testing userList
+2019-10-23 14:39:10 INFO  TestDriver:23 - testing findByUserName
+2019-10-23 14:39:11 INFO  TestDriver:26 - testing findByUsernameAndPassword
+2019-10-23 14:39:23 INFO  TestDriver:17 - testing userList
+2019-10-23 14:39:24 INFO  TestDriver:23 - testing findByUserName
+2019-10-23 14:39:24 INFO  TestDriver:26 - testing findByUsernameAndPassword
+2019-10-23 14:53:32 INFO  TestDriver:17 - testing userList
+2019-10-23 14:53:33 INFO  TestDriver:23 - testing findByUserName
+2019-10-23 14:53:33 INFO  TestDriver:26 - testing findByUsernameAndPassword
+2019-10-23 14:53:34 INFO  TestDriver:29 - testing save
+2019-10-23 14:58:19 INFO  TestDriver:17 - testing userList
+2019-10-23 14:58:21 INFO  TestDriver:23 - testing findByUserName
+2019-10-23 14:58:21 INFO  TestDriver:26 - testing findByUsernameAndPassword
+2019-10-23 14:58:21 INFO  TestDriver:29 - testing save
+2019-10-23 15:20:34 INFO  TestDriver:17 - testing userList
+2019-10-23 15:20:35 INFO  TestDriver:23 - testing findByUserName
+2019-10-23 15:20:36 INFO  TestDriver:26 - testing findByUsernameAndPassword
+2019-10-23 15:20:36 INFO  TestDriver:37 - testing findByUserId
+2019-10-23 15:48:03 INFO  TestDriver:20 - testing userList
+2019-10-23 15:48:04 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 15:48:04 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 15:48:04 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 15:48:05 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 15:48:27 INFO  TestDriver:20 - testing userList
+2019-10-23 15:48:28 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 15:48:28 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 15:48:29 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 15:48:29 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 22:54:35 INFO  TestDriver:20 - testing userList
+2019-10-23 22:54:36 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 22:54:37 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 22:54:37 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 22:54:37 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 22:54:38 INFO  TestDriver:50 - testing close account
+2019-10-23 22:55:45 INFO  TestDriver:20 - testing userList
+2019-10-23 22:55:46 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 22:55:47 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 22:55:47 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 22:55:47 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 22:55:48 INFO  TestDriver:50 - testing close account
+2019-10-23 22:56:10 INFO  TestDriver:20 - testing userList
+2019-10-23 22:56:12 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 22:56:12 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 22:56:12 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 22:56:13 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 22:56:13 INFO  TestDriver:50 - testing close account
+2019-10-23 22:56:56 INFO  TestDriver:20 - testing userList
+2019-10-23 22:56:58 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 22:56:58 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 22:56:58 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 22:56:58 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 22:56:59 INFO  TestDriver:50 - testing close account
+2019-10-23 22:58:03 INFO  TestDriver:20 - testing userList
+2019-10-23 22:58:04 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 22:58:04 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 22:58:05 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 22:58:05 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 22:58:06 INFO  TestDriver:50 - testing close account
+2019-10-23 23:00:13 INFO  TestDriver:20 - testing userList
+2019-10-23 23:00:14 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 23:00:14 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 23:00:14 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 23:00:15 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 23:00:16 INFO  TestDriver:50 - testing close account
+2019-10-23 23:00:33 INFO  TestDriver:20 - testing userList
+2019-10-23 23:00:34 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 23:00:35 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 23:00:35 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 23:00:35 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 23:00:36 INFO  TestDriver:50 - testing close account
+2019-10-23 23:05:31 INFO  TestDriver:20 - testing userList
+2019-10-23 23:05:32 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 23:05:33 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 23:05:33 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 23:05:33 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 23:05:34 INFO  TestDriver:50 - testing add account
+2019-10-23 23:05:35 INFO  TestDriver:54 - testing close account
+2019-10-23 23:06:02 INFO  TestDriver:20 - testing userList
+2019-10-23 23:06:03 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 23:06:04 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 23:06:04 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 23:06:04 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 23:06:06 INFO  TestDriver:50 - testing add account
+2019-10-23 23:06:08 INFO  TestDriver:58 - testing close account
+2019-10-23 23:07:38 INFO  TestDriver:20 - testing userList
+2019-10-23 23:07:39 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 23:07:39 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 23:07:40 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 23:07:40 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 23:07:40 INFO  TestDriver:58 - testing close account
+2019-10-23 23:08:14 INFO  TestDriver:20 - testing userList
+2019-10-23 23:08:15 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 23:08:15 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 23:08:15 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 23:08:16 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 23:08:16 INFO  TestDriver:50 - testing add account
+2019-10-23 23:08:18 INFO  TestDriver:58 - testing close account
+2019-10-23 23:08:54 INFO  TestDriver:20 - testing userList
+2019-10-23 23:08:55 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 23:08:55 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 23:08:55 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 23:08:56 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 23:08:57 INFO  TestDriver:50 - testing add account
+2019-10-23 23:08:59 INFO  TestDriver:58 - testing close account
+2019-10-23 23:09:17 INFO  TestDriver:20 - testing userList
+2019-10-23 23:09:18 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 23:09:18 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 23:09:18 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 23:09:19 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 23:09:20 INFO  TestDriver:58 - testing close account
+2019-10-23 23:09:32 INFO  TestDriver:20 - testing userList
+2019-10-23 23:09:34 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 23:09:34 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 23:09:34 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 23:09:34 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 23:09:36 INFO  TestDriver:58 - testing close account
+2019-10-23 23:09:49 INFO  TestDriver:20 - testing userList
+2019-10-23 23:09:50 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 23:09:51 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 23:09:51 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 23:09:51 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 23:09:53 INFO  TestDriver:58 - testing close account
+2019-10-23 23:10:17 INFO  TestDriver:20 - testing userList
+2019-10-23 23:10:18 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 23:10:18 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 23:10:19 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 23:10:19 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 23:10:20 INFO  TestDriver:58 - testing close account
+2019-10-23 23:22:21 INFO  TestDriver:20 - testing userList
+2019-10-23 23:22:22 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 23:22:23 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 23:22:23 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 23:22:23 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 23:22:24 INFO  TestDriver:58 - testing close account
+2019-10-23 23:30:43 INFO  TestDriver:20 - testing userList
+2019-10-23 23:30:44 INFO  TestDriver:26 - testing findByUserName
+2019-10-23 23:30:45 INFO  TestDriver:29 - testing findByUsernameAndPassword
+2019-10-23 23:30:45 INFO  TestDriver:40 - testing findByUserId
+2019-10-23 23:30:45 INFO  TestDriver:44 - testing viewAll accounts
+2019-10-23 23:30:47 INFO  TestDriver:58 - testing close account
+2019-10-23 23:30:48 INFO  TestDriver:65 - testing viewOne account
+2019-10-23 23:48:12 INFO  TestDriver:24 - testing userList
+2019-10-23 23:48:13 INFO  TestDriver:30 - testing findByUserName
+2019-10-23 23:48:14 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-23 23:48:14 INFO  TestDriver:44 - testing findByUserId
+2019-10-23 23:48:14 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-23 23:48:16 INFO  TestDriver:62 - testing close account
+2019-10-23 23:48:17 INFO  TestDriver:69 - testing viewOne account
+2019-10-23 23:48:18 INFO  TestDriver:72 - logging in
+2019-10-23 23:48:18 INFO  TestDriver:76 - testing viewOwned accounts
+2019-10-23 23:49:02 INFO  TestDriver:24 - testing userList
+2019-10-23 23:49:03 INFO  TestDriver:30 - testing findByUserName
+2019-10-23 23:49:04 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-23 23:49:04 INFO  TestDriver:44 - testing findByUserId
+2019-10-23 23:49:04 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-23 23:49:06 INFO  TestDriver:62 - testing close account
+2019-10-23 23:49:07 INFO  TestDriver:69 - testing viewOne account
+2019-10-23 23:49:08 INFO  TestDriver:72 - logging in
+2019-10-23 23:49:08 INFO  TestDriver:77 - testing viewOwned accounts
+2019-10-23 23:50:07 INFO  TestDriver:24 - testing userList
+2019-10-23 23:50:08 INFO  TestDriver:30 - testing findByUserName
+2019-10-23 23:50:08 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-23 23:50:09 INFO  TestDriver:44 - testing findByUserId
+2019-10-23 23:50:09 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-23 23:50:10 INFO  TestDriver:62 - testing close account
+2019-10-23 23:50:12 INFO  TestDriver:69 - testing viewOne account
+2019-10-23 23:50:12 INFO  TestDriver:72 - logging in
+2019-10-23 23:50:13 INFO  TestDriver:77 - testing viewOwned accounts
+2019-10-24 10:57:52 INFO  TestDriver:24 - testing userList
+2019-10-24 10:57:54 INFO  TestDriver:30 - testing findByUserName
+2019-10-24 10:57:54 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-24 10:57:55 INFO  TestDriver:44 - testing findByUserId
+2019-10-24 10:57:55 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-24 10:57:56 INFO  TestDriver:62 - testing close account
+2019-10-24 10:57:57 INFO  TestDriver:69 - testing viewOne account
+2019-10-24 10:57:59 INFO  TestDriver:72 - logging in
+2019-10-24 10:57:59 INFO  TestDriver:77 - testing viewOwned accounts
+2019-10-24 13:28:22 INFO  TestDriver:24 - testing userList
+2019-10-24 13:28:23 INFO  TestDriver:30 - testing findByUserName
+2019-10-24 13:28:23 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-24 13:28:23 INFO  TestDriver:44 - testing findByUserId
+2019-10-24 13:28:24 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-24 13:28:25 INFO  TestDriver:69 - testing viewOne account
+2019-10-24 13:28:25 INFO  TestDriver:72 - logging in
+2019-10-24 13:28:25 INFO  TestDriver:77 - testing viewOwned accounts
+2019-10-24 13:28:26 INFO  TestDriver:83 - testing close account with user validation
+2019-10-24 13:28:46 INFO  TestDriver:24 - testing userList
+2019-10-24 13:28:47 INFO  TestDriver:30 - testing findByUserName
+2019-10-24 13:28:47 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-24 13:28:48 INFO  TestDriver:44 - testing findByUserId
+2019-10-24 13:28:48 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-24 13:28:49 INFO  TestDriver:69 - testing viewOne account
+2019-10-24 13:28:49 INFO  TestDriver:72 - logging in
+2019-10-24 13:28:50 INFO  TestDriver:77 - testing viewOwned accounts
+2019-10-24 13:28:50 INFO  TestDriver:83 - testing close account with user validation
+2019-10-24 13:29:25 INFO  TestDriver:24 - testing userList
+2019-10-24 13:29:26 INFO  TestDriver:30 - testing findByUserName
+2019-10-24 13:29:26 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-24 13:29:27 INFO  TestDriver:44 - testing findByUserId
+2019-10-24 13:29:27 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-24 13:29:28 INFO  TestDriver:69 - testing viewOne account
+2019-10-24 13:29:29 INFO  TestDriver:72 - logging in
+2019-10-24 13:29:29 INFO  TestDriver:77 - testing viewOwned accounts
+2019-10-24 13:29:30 INFO  TestDriver:83 - testing close account with user validation
+2019-10-24 16:46:14 INFO  TestDriver:24 - testing userList
+2019-10-24 16:46:15 INFO  TestDriver:30 - testing findByUserName
+2019-10-24 16:46:15 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-24 16:46:16 INFO  TestDriver:44 - testing findByUserId
+2019-10-24 16:46:16 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-24 16:46:17 INFO  TestDriver:69 - testing viewOne account
+2019-10-24 16:46:17 INFO  TestDriver:72 - logging in
+2019-10-24 16:46:18 INFO  TestDriver:77 - testing viewOwned accounts
+2019-10-24 16:46:18 INFO  TestDriver:83 - testing close account with user validation
+2019-10-24 16:46:31 INFO  TestDriver:24 - testing userList
+2019-10-24 16:46:32 INFO  TestDriver:30 - testing findByUserName
+2019-10-24 16:46:32 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-24 16:46:32 INFO  TestDriver:44 - testing findByUserId
+2019-10-24 16:46:33 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-24 16:46:34 INFO  TestDriver:69 - testing viewOne account
+2019-10-24 16:46:34 INFO  TestDriver:72 - logging in
+2019-10-24 16:46:34 INFO  TestDriver:77 - testing viewOwned accounts
+2019-10-24 16:46:35 INFO  TestDriver:83 - testing close account with user validation
+2019-10-24 22:24:21 INFO  TestDriver:24 - testing userList
+2019-10-24 22:24:22 INFO  TestDriver:30 - testing findByUserName
+2019-10-24 22:24:22 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-24 22:24:23 INFO  TestDriver:44 - testing findByUserId
+2019-10-24 22:24:23 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-24 22:24:24 INFO  TestDriver:69 - testing viewOne account
+2019-10-24 22:24:25 INFO  TestDriver:72 - logging in
+2019-10-24 22:24:25 INFO  TestDriver:77 - testing viewOwned accounts
+2019-10-24 22:24:26 INFO  TestDriver:83 - testing close account with user validation
+2019-10-24 22:24:28 INFO  TestDriver:90 - testing deposit
+2019-10-24 22:24:59 INFO  TestDriver:24 - testing userList
+2019-10-24 22:25:00 INFO  TestDriver:30 - testing findByUserName
+2019-10-24 22:25:00 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-24 22:25:01 INFO  TestDriver:44 - testing findByUserId
+2019-10-24 22:25:01 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-24 22:25:02 INFO  TestDriver:69 - testing viewOne account
+2019-10-24 22:25:03 INFO  TestDriver:72 - logging in
+2019-10-24 22:25:03 INFO  TestDriver:77 - testing viewOwned accounts
+2019-10-24 22:25:04 INFO  TestDriver:83 - testing close account with user validation
+2019-10-24 22:25:06 INFO  TestDriver:90 - testing deposit
+2019-10-24 22:28:23 INFO  TestDriver:24 - testing userList
+2019-10-24 22:28:24 INFO  TestDriver:30 - testing findByUserName
+2019-10-24 22:28:24 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-24 22:28:24 INFO  TestDriver:44 - testing findByUserId
+2019-10-24 22:28:25 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-24 22:28:26 INFO  TestDriver:69 - testing viewOne account
+2019-10-24 22:28:27 INFO  TestDriver:72 - logging in
+2019-10-24 22:28:27 INFO  TestDriver:77 - testing viewOwned accounts
+2019-10-24 22:28:28 INFO  TestDriver:83 - testing close account with user validation
+2019-10-24 22:28:30 INFO  TestDriver:90 - testing deposit
+2019-10-24 22:32:27 INFO  TestDriver:24 - testing userList
+2019-10-24 22:32:28 INFO  TestDriver:30 - testing findByUserName
+2019-10-24 22:32:29 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-24 22:32:29 INFO  TestDriver:44 - testing findByUserId
+2019-10-24 22:32:29 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-24 22:32:31 INFO  TestDriver:54 - testing add account
+2019-10-24 22:32:33 INFO  TestDriver:69 - testing viewOne account
+2019-10-24 22:32:34 INFO  TestDriver:72 - logging in
+2019-10-24 22:32:34 INFO  TestDriver:77 - testing viewOwned accounts
+2019-10-24 22:32:35 INFO  TestDriver:83 - testing close account with user validation
+2019-10-24 22:32:37 INFO  TestDriver:90 - testing deposit
+2019-10-24 22:34:27 INFO  TestDriver:24 - testing userList
+2019-10-24 22:34:30 INFO  TestDriver:30 - testing findByUserName
+2019-10-24 22:34:30 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-24 22:34:31 INFO  TestDriver:44 - testing findByUserId
+2019-10-24 22:34:31 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-24 22:34:33 INFO  TestDriver:54 - testing add account
+2019-10-24 22:34:36 INFO  TestDriver:69 - testing viewOne account
+2019-10-24 22:34:38 INFO  TestDriver:72 - logging in
+2019-10-24 22:34:39 INFO  TestDriver:77 - testing viewOwned accounts
+2019-10-24 22:34:40 INFO  TestDriver:83 - testing close account with user validation
+2019-10-24 22:34:44 INFO  TestDriver:90 - testing deposit
+2019-10-24 22:36:16 INFO  TestDriver:24 - testing userList
+2019-10-24 22:36:17 INFO  TestDriver:30 - testing findByUserName
+2019-10-24 22:36:17 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-24 22:36:18 INFO  TestDriver:44 - testing findByUserId
+2019-10-24 22:36:18 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-24 22:36:20 INFO  TestDriver:69 - testing viewOne account
+2019-10-24 22:36:21 INFO  TestDriver:72 - logging in
+2019-10-24 22:36:21 INFO  TestDriver:77 - testing viewOwned accounts
+2019-10-24 22:36:22 INFO  TestDriver:83 - testing close account with user validation
+2019-10-24 22:36:25 INFO  TestDriver:90 - testing deposit
+2019-10-24 22:38:46 INFO  TestDriver:24 - testing userList
+2019-10-24 22:38:47 INFO  TestDriver:30 - testing findByUserName
+2019-10-24 22:38:48 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-24 22:38:48 INFO  TestDriver:44 - testing findByUserId
+2019-10-24 22:38:48 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-24 22:38:51 INFO  TestDriver:69 - testing viewOne account
+2019-10-24 22:38:51 INFO  TestDriver:72 - logging in
+2019-10-24 22:38:52 INFO  TestDriver:77 - testing viewOwned accounts
+2019-10-24 22:38:53 INFO  TestDriver:83 - testing close account with user validation
+2019-10-24 22:38:55 INFO  TestDriver:90 - testing deposit
+2019-10-24 22:39:49 INFO  TestDriver:24 - testing userList
+2019-10-24 22:39:51 INFO  TestDriver:30 - testing findByUserName
+2019-10-24 22:39:51 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-24 22:39:51 INFO  TestDriver:44 - testing findByUserId
+2019-10-24 22:39:52 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-24 22:39:54 INFO  TestDriver:69 - testing viewOne account
+2019-10-24 22:39:54 INFO  TestDriver:72 - logging in
+2019-10-24 22:39:55 INFO  TestDriver:77 - testing viewOwned accounts
+2019-10-24 22:39:56 INFO  TestDriver:83 - testing close account with user validation
+2019-10-24 22:39:58 INFO  TestDriver:90 - testing deposit
+2019-10-24 22:42:19 INFO  TestDriver:24 - testing userList
+2019-10-24 22:42:20 INFO  TestDriver:30 - testing findByUserName
+2019-10-24 22:42:20 INFO  TestDriver:33 - testing findByUsernameAndPassword
+2019-10-24 22:42:21 INFO  TestDriver:44 - testing findByUserId
+2019-10-24 22:42:21 INFO  TestDriver:48 - testing viewAll accounts
+2019-10-24 22:42:23 INFO  TestDriver:69 - testing viewOne account
+2019-10-24 22:42:24 INFO  TestDriver:72 - logging in
+2019-10-24 22:42:24 INFO  TestDriver:77 - testing viewOwned accounts
+2019-10-24 22:42:26 INFO  TestDriver:83 - testing close account with user validation
+2019-10-24 22:42:28 INFO  TestDriver:90 - testing deposit
+2019-10-25 01:00:39 INFO  TestDriver:119 - testing viewTransaction
+2019-10-25 01:01:04 INFO  TestDriver:119 - testing viewTransaction
+2019-10-25 01:20:26 INFO  TestDriver:115 - testing viewTransaction
+2019-10-25 01:20:28 INFO  TestDriver:118 - testing viewAllTransactions
+2019-10-25 01:20:29 INFO  TestDriver:124 - testing addTransaction
+2019-10-25 01:21:03 INFO  TestDriver:115 - testing viewTransaction
+2019-10-25 01:21:05 INFO  TestDriver:118 - testing viewAllTransactions
+2019-10-25 01:21:06 INFO  TestDriver:124 - testing addTransaction
+2019-10-25 01:22:50 INFO  TestDriver:115 - testing viewTransaction
+2019-10-25 01:22:51 INFO  TestDriver:118 - testing viewAllTransactions
+2019-10-25 01:22:52 INFO  TestDriver:124 - testing addTransaction
+2019-10-25 01:23:22 INFO  TestDriver:115 - testing viewTransaction
+2019-10-25 01:23:24 INFO  TestDriver:118 - testing viewAllTransactions
+2019-10-25 01:23:25 INFO  TestDriver:124 - testing addTransaction
+2019-10-25 09:28:29 INFO  TestDriver:74 - logging in
+2019-10-25 09:28:31 INFO  TestDriver:116 - testing viewTransaction
+2019-10-25 09:28:31 INFO  TestDriver:119 - testing viewAllTransactions
+2019-10-25 09:28:33 INFO  TestDriver:125 - testing addTransaction
+2019-10-25 09:28:35 INFO  TestDriver:132 - testing viewOwned
+2019-10-25 09:29:06 INFO  TestDriver:74 - logging in
+2019-10-25 09:29:07 INFO  TestDriver:116 - testing viewTransaction
+2019-10-25 09:29:08 INFO  TestDriver:119 - testing viewAllTransactions
+2019-10-25 09:29:10 INFO  TestDriver:125 - testing addTransaction
+2019-10-25 09:29:13 INFO  TestDriver:132 - testing viewOwned
+2019-10-25 09:33:16 INFO  TestDriver:74 - logging in
+2019-10-25 09:33:17 INFO  TestDriver:116 - testing viewTransaction
+2019-10-25 09:33:18 INFO  TestDriver:119 - testing viewAllTransactions
+2019-10-25 09:33:20 INFO  TestDriver:132 - testing viewOwned
