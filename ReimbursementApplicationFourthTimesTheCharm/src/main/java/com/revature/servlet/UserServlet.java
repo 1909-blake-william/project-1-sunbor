@@ -17,6 +17,19 @@ public class UserServlet extends HttpServlet {
 	private UserDao userDao = UserDao.currentImplementation;
 	
 	@Override
+	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		super.service(req, resp);
+		resp.addHeader("Access-Control-Allow-Origin", "http://localhost:5500");
+		resp.addHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE, HEAD");
+		resp.addHeader("Access-Control-Allow-Headers",
+				"Origin, Methods, Credentials, X-Requested-With, Content-Type, Accept");
+		resp.addHeader("Access-Control-Allow-Credentials", "true");
+		resp.setContentType("application/json");
+	}
+
+	
+	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
 		List<User> userList;
