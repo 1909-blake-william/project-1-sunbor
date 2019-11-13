@@ -2,12 +2,14 @@ package com.revature.driver;
 
 import java.util.List;
 
+import com.revature.dao.ReimbursementDao;
 import com.revature.dao.UserDao;
-import com.revature.model.User;
+import com.revature.model.Reimbursement;
 
 public class TestDriver {
 	public static void main(String[] args) {
 		UserDao userDao = UserDao.currentImplementation;
+		ReimbursementDao reimbDao = ReimbursementDao.currentImplementation;
 		
 //		List<User> userList = userDao.getAllUsers();
 //		userList.forEach(user -> {
@@ -23,7 +25,12 @@ public class TestDriver {
 //			System.out.println(user);
 //		});
 		
-		System.out.println(userDao.findByUsername("admin"));
-		System.out.println(userDao.findByUsernameAndPassword("admin", "pass"));
+//		System.out.println(userDao.findByUsername("admin"));
+//		System.out.println(userDao.findByUsernameAndPassword("admin", "pass"));
+		
+		List<Reimbursement> reimbList = reimbDao.getAllReimb();
+		reimbList.forEach(reimb -> {
+			System.out.println(reimb);
+		});
 	}
 }

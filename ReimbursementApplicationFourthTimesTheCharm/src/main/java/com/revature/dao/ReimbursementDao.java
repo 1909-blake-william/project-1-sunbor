@@ -7,6 +7,8 @@ import com.revature.model.User;
 
 public interface ReimbursementDao {
 	
+	ReimbursementDao currentImplementation = new ReimbursementDaoSQL();
+	
 	Reimbursement getReimbById(int id);
 	
 	List<Reimbursement> getAllReimb();
