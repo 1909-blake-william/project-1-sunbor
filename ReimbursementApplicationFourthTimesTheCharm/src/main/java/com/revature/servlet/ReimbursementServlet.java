@@ -49,8 +49,9 @@ public class ReimbursementServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		ObjectMapper om = new ObjectMapper();
+		System.out.println("helllppppp");
 		Reimbursement newReimb = (Reimbursement) om.readValue(req.getReader(), Reimbursement.class);
-		
+		System.out.println(newReimb);
 		int id = reimbDao.saveReimb(newReimb);
 		newReimb.setId(id);
 		

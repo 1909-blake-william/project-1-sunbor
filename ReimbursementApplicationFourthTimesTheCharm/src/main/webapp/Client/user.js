@@ -17,7 +17,7 @@ function newReimb(event){
 
     const reimb = readReimbInput();
 
-    fetch('http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm', {
+    fetch('http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/reimbursement', {
         method: 'POST',
         body: JSON.stringify(reimb),
         headers: {
@@ -104,7 +104,8 @@ function getCurrentUserInfo() {
         currentUser = data;
     })
     .catch(err => {
-        window.location = '/login.html';
+    	console.log('get out');
+        window.location = 'http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/Client/login.html';
     })
 }
 

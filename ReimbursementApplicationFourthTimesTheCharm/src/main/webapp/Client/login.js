@@ -1,6 +1,6 @@
 let currentUser;
-
-async function login(event){
+let url = 'http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/Client'
+function login(event){
     event.preventDefault();
     
     const username = document.getElementById('username-input').value;
@@ -23,7 +23,7 @@ async function login(event){
         console.log(data);
         currentUser = data;
         console.log('userInfo function ' + currentUser.role_id);
-        window.location = currentUser.role_id === 1 ? '/admin.html' : '/user.html';
+        window.location = currentUser.role_id === 1 ? url + '/admin.html' : url + '/user.html';
     })
     .catch(err => {
         console.log(err);
