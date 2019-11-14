@@ -31,25 +31,38 @@ public class ReimbursementServlet extends HttpServlet {
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
-		List<Reimbursement> reimbList;
-		
-		User currentUser = (User) req.getSession().getAttribute("user");
-		System.out.println(currentUser);
-		
-		reimbList = reimbDao.getReimbByUser(currentUser.getId());
-		
-		ObjectMapper om = new ObjectMapper();
-		String json = om.writeValueAsString(reimbList);
-		
-		resp.addHeader("content-type", "application/json");
-		resp.getWriter().write(json);
+		System.out.println("uri = " + req.getRequestURI());
+		if ("/ReimbursementApplicationFourthTimesTheCharm/reimbursement/employee".equals(req.getRequestURI())) {
+			List<Reimbursement> reimbList;
+			
+			User currentUser = (User) req.getSession().getAttribute("user");
+			System.out.println(currentUser);
+			
+			reimbList = reimbDao.getReimbByUser(currentUser.getId());
+			
+			ObjectMapper om = new ObjectMapper();
+			String json = om.writeValueAsString(reimbList);
+			
+			resp.addHeader("content-type", "application/json");
+			resp.getWriter().write(json);
+		}
+		else if("/ReimbursementApplicationFourthTimesTheCharm/reimbursement/manager".equals(req.getRequestURI())) {
+			List<Reimbursement> reimbList;
+			
+			reimbList = reimbDao.getAllReimb();
+			
+			ObjectMapper om = new ObjectMapper();
+			String json = om.writeValueAsString(reimbList);
+			
+			resp.addHeader("content-type", "application/json");
+			resp.getWriter().write(json);
+		}
 	}
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		ObjectMapper om = new ObjectMapper();
-		System.out.println("helllppppp");
+
 		Reimbursement newReimb = (Reimbursement) om.readValue(req.getReader(), Reimbursement.class);
 		System.out.println(newReimb);
 		int id = reimbDao.saveReimb(newReimb);

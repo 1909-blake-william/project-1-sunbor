@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.revature.dao.ReimbursementDao;
 import com.revature.dao.UserDao;
-import com.revature.model.Reimbursement;
+import com.revature.model.User;
 
 public class TestDriver {
 	public static void main(String[] args) {
@@ -28,10 +28,10 @@ public class TestDriver {
 //		System.out.println(userDao.findByUsername("admin"));
 //		System.out.println(userDao.findByUsernameAndPassword("admin", "pass"));
 		
-		List<Reimbursement> reimbList = reimbDao.getReimbByUser(2);
-		reimbList.forEach(reimb -> {
-			System.out.println(reimb);
-		});
+//		List<Reimbursement> reimbList = reimbDao.getReimbByUser(2);
+//		reimbList.forEach(reimb -> {
+//			System.out.println(reimb);
+//		});
 		
 //		Reimbursement newReimb = new Reimbursement(10, 40, null, null, "oh no", null, 2, 0, 1, 3);
 //		reimbDao.saveReimb(newReimb);

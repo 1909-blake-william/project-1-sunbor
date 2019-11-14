@@ -1,7 +1,7 @@
 let currentUser;
 
 function getReimbs(){
-    fetch('http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/reimbursement/employee', {
+    fetch('http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/reimbursement/manager', {
         credentials: 'include'
     })
         .then(resp => resp.json())
@@ -10,48 +10,6 @@ function getReimbs(){
             console.log(data);
         })
         .catch(console.log)
-}
-
-function newReimb(event){
-    event.preventDefault();
-
-    const reimb = readReimbInput();
-
-    fetch('http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/reimbursement/employee', {
-    	credentials: 'include',
-        method: 'POST',
-        body: JSON.stringify(reimb),
-        headers: {
-            'content-type': 'application/json'
-        }
-    })
-    .then(res => res.json())
-    .then(data => {
-        addRow(reimb);
-        console.log(data);
-    })
-    .catch(err => console.log(err));
-}
-
-function readReimbInput(){
-    const reimbAmount = document.getElementById('amount-input').value;
-    const reimbDescription = document.getElementById('description-input').value;
-    const reimbType = document.getElementById('type-input').value;
-
-    const reimb = {
-        id: 0,
-        amount: reimbAmount,
-        submitted: new Date(),
-        resolved: null,
-        description: reimbDescription,
-        receipt: null,
-        author: currentUser.id,
-        resolver: null,
-        statusId: 1,
-        typeId: reimbType
-    }
-    console.log(reimb);
-    return reimb;
 }
 
 function addRow(reimb){
@@ -88,9 +46,37 @@ function addRow(reimb){
     const typeData = document.createElement('td');
     typeData.innerText = reimb.typeId;
     row.appendChild(typeData);
-
+        
+    const approveButton = document.createElement('button');
+    approveButton.innerText = 'approve';
+    approveButton.setAttribute('onclick', `buttonTest(${reimb.id}, 2, this.parentElement)`);
+    row.appendChild(approveButton);
+    
     document.getElementById('reimb-table-body').appendChild(row);
 }
+
+function buttonTest(reimbId, statusId, ele){
+	console.log(reimbId);
+	console.log(statusId);
+	console.log(ele);
+}
+
+function setStatus(reimbId, statusId, ele){
+	fetch(`http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/reimbursement/manager/${reimbId}/${statusId}`, {
+		credentials: 'include',
+		method: 'PATCH',
+		body: JSON.stringify(currentUser.id),
+		headers: {
+            'content-type': 'application/json'
+        }
+	})
+        .then(resp => resp.json())
+        .then(data => {
+        	
+        })
+        .catch(console.log)
+}
+
 
 function getCurrentUserInfo() {
     console.log('getting current user');
@@ -102,10 +88,11 @@ function getCurrentUserInfo() {
         // document.getElementById('users-name').innerText = data.username
         // refreshTable();
         currentUser = data;
-        if(currentUser === null){
-        	console.log('get out');
-            window.location = 'http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/Client/login.html';
-        }
+    	console.log(currentUser);
+    	if(currentUser.role_id !== 1){
+    		console.log('get out');
+    		window.location = 'http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/Client/login.html';
+    	}
     })
     .catch(err => {
     	console.log('get out');

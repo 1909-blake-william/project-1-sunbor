@@ -102,6 +102,22 @@ public class ReimbursementDaoSQL implements ReimbursementDao {
 
 	@Override
 	public List<Reimbursement> getReimbByStatus(int statusId) {
+		try(Connection c = ConnectionUtil.getConnection()){
+			String sql = "SELECT * FROM reimbursement WHERE reimb_status_id = ?";
+			PreparedStatement ps = c.prepareStatement(sql);
+			ps.setInt(1, statusId);
+			
+			ResultSet rs = ps.executeQuery();
+			
+			List<Reimbursement> reimbList = new ArrayList<Reimbursement>();
+			while(rs.next()) {
+				reimbList.add(getReimbFromSQL(rs));
+			}
+			return reimbList;
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
 		// TODO Auto-generated method stub
 		return null;
 	}
