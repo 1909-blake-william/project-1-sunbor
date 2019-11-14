@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table id="reimb-table">
+        <thead id='reimb-table-head'>
+            <tr>
+                <th>Amount</th>
+                <th>Submitted</th>
+                <th>Resolved</th>
+                <th>Description</th>
+                <th>Author</th>
+                <th>Resolver</th>
+                <th>Status</th>
+                <th>Type</th>
+                
+            </tr>
+
+        </thead>
+        <tbody id='reimb-table-body'>
+
+        </tbody>
+    </table>
+
+    <form class="reimb-submit" onsubmit="newReimb(event)">
+        <div class="reimb-amount-input">
+          <label for="amount-input">Reimbursement Amount</label>
+          <input type="number" class="form-control" id="amount-input" placeholder="Enter amount">
+        </div>
+        <div class="reimb-description-input">
+          <label for="description-input">Description</label>
+          <input type="text" class="form-control" id="description-input" placeholder="Enter description">
+        </div>
+        <div class="reimb-type-select">
+            <label for="type-input">Type</label>
+            <select class="form-control" id="type-input">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</body>
+<script src="user.js"></script>
+</html>

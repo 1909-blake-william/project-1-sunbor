@@ -15,7 +15,7 @@ public interface ReimbursementDao {
 	
 	int saveReimb(Reimbursement newReimb);
 	
-	List<Reimbursement> getReimbByUser(User u);
+	List<Reimbursement> getReimbByUser(int userId);
 	
 	List<Reimbursement> getReimbByStatus(int statusId);
 	

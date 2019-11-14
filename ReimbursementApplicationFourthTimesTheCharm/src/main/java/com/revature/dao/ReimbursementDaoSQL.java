@@ -59,12 +59,43 @@ public class ReimbursementDaoSQL implements ReimbursementDao {
 
 	@Override
 	public int saveReimb(Reimbursement newReimb) {
+		try(Connection c = ConnectionUtil.getConnection()){
+			String sql = "INSERT INTO reimbursement (reimb_id, reimb_amount, reimb_submitted, reimb_resolved, reimb_description, reimb_receipt, reimb_author, reimb_resolver, reimb_status_id, reimb_type_id) " + 
+					"VALUES (REIMB_ID_SEQ.nextval, ?, CURRENT_TIMESTAMP, null, ?, null, ?, null, 1, ?)";
+			PreparedStatement ps = c.prepareStatement(sql);
+			ps.setDouble(1, newReimb.getAmount());
+			ps.setString(2, newReimb.getDescription());
+			ps.setInt(3, newReimb.getAuthor());;
+			ps.setInt(4, newReimb.getTypeId());
+			
+			return ps.executeUpdate();
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public List<Reimbursement> getReimbByUser(User u) {
+	public List<Reimbursement> getReimbByUser(int userId) {
+		try(Connection c = ConnectionUtil.getConnection()){
+			String sql = "SELECT * FROM reimbursement WHERE reimb_author = ?";
+			PreparedStatement ps = c.prepareStatement(sql);
+			ps.setInt(1, userId);
+			
+			ResultSet rs = ps.executeQuery();
+			
+			List<Reimbursement> reimbList = new ArrayList<Reimbursement>();
+			while(rs.next()) {
+				reimbList.add(getReimbFromSQL(rs));
+			}
+			return reimbList;
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
+		
 		// TODO Auto-generated method stub
 		return null;
 	}

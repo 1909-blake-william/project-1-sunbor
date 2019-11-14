@@ -28,9 +28,15 @@ public class TestDriver {
 //		System.out.println(userDao.findByUsername("admin"));
 //		System.out.println(userDao.findByUsernameAndPassword("admin", "pass"));
 		
-		List<Reimbursement> reimbList = reimbDao.getAllReimb();
+		List<Reimbursement> reimbList = reimbDao.getReimbByUser(2);
 		reimbList.forEach(reimb -> {
 			System.out.println(reimb);
 		});
+		
+//		Reimbursement newReimb = new Reimbursement(10, 40, null, null, "oh no", null, 2, 0, 1, 3);
+//		reimbDao.saveReimb(newReimb);
+//		reimbList.forEach(reimb -> {
+//			System.out.println(reimb);
+//		});
 	}
 }
