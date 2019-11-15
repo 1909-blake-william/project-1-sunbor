@@ -17,6 +17,7 @@ import com.revature.model.User;
 public class ReimbursementServlet extends HttpServlet {
 	
 	private ReimbursementDao reimbDao = ReimbursementDao.currentImplementation;
+	private final ObjectMapper om = new ObjectMapper();
 	
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -41,7 +42,7 @@ public class ReimbursementServlet extends HttpServlet {
 			
 			reimbList = reimbDao.getReimbByUser(currentUser.getId());
 			
-			ObjectMapper om = new ObjectMapper();
+			//ObjectMapper om = new ObjectMapper();
 			String json = om.writeValueAsString(reimbList);
 			
 			resp.addHeader("content-type", "application/json");
@@ -52,27 +53,41 @@ public class ReimbursementServlet extends HttpServlet {
 			
 			reimbList = reimbDao.getAllReimb();
 			
-			ObjectMapper om = new ObjectMapper();
+			//ObjectMapper om = new ObjectMapper();
 			String json = om.writeValueAsString(reimbList);
 			
 			resp.addHeader("content-type", "application/json");
 			resp.getWriter().write(json);
 		}
+
 	}
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		ObjectMapper om = new ObjectMapper();
+		//ObjectMapper om = new ObjectMapper();
 
-		Reimbursement newReimb = (Reimbursement) om.readValue(req.getReader(), Reimbursement.class);
-		System.out.println(newReimb);
-		int id = reimbDao.saveReimb(newReimb);
-		newReimb.setId(id);
-		
-		String json = om.writeValueAsString(newReimb);
-		
-		resp.getWriter().write(json);
-		resp.setStatus(201);
+		if ("/ReimbursementApplicationFourthTimesTheCharm/reimbursement/employee".equals(req.getRequestURI())) {
+			Reimbursement newReimb = (Reimbursement) om.readValue(req.getReader(), Reimbursement.class);
+			System.out.println(newReimb);
+			int id = reimbDao.saveReimb(newReimb);
+			newReimb.setId(id);
+			
+			String json = om.writeValueAsString(newReimb);
+			
+			resp.getWriter().write(json);
+			resp.setStatus(201);
+		}
+		else if("/ReimbursementApplicationFourthTimesTheCharm/reimbursement/manager/filter".equals(req.getRequestURI())) {
+			UpdateData upData = om.readValue(req.getReader(), UpdateData.class);
+			
+			List<Reimbursement> reimbList;
+			
+			reimbList = reimbDao.getReimbByStatus(upData.getStatusId());
+			
+			String json = om.writeValueAsString(reimbList);
+			resp.addHeader("content-type", "application/json");
+			resp.getWriter().write(json);
+		}
 		
 	}
 	
@@ -80,7 +95,7 @@ public class ReimbursementServlet extends HttpServlet {
 	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("patch request");
 		
-		ObjectMapper om = new ObjectMapper();
+		//ObjectMapper om = new ObjectMapper();
 		
 		UpdateData upData = om.readValue(req.getReader(), UpdateData.class);
 		reimbDao.setStatus(upData.getReimbId(), upData.getStatusId(), upData.getResolverId());

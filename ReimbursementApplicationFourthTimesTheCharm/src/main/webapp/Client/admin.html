@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
 </head>
 <body>
-    <table id="reimb-table">
-        <thead id='reimb-table-head'>
-            <tr>
-                <th>Amount</th>
-                <th>Submitted</th>
-                <th>Resolved</th>
-                <th>Description</th>
-                <th>Author</th>
-                <th>Resolver</th>
-                <th>Status</th>
-                <th>Type</th>
-                
-            </tr>
+	<table id="reimb-table">
+		<thead id='reimb-table-head'>
+			<tr>
+				<th>Amount</th>
+				<th>Submitted</th>
+				<th>Resolved</th>
+				<th>Description</th>
+				<th>Author</th>
+				<th>Resolver</th>
+				<th>Status</th>
+				<th>Type</th>
 
-        </thead>
-        <tbody id='reimb-table-body'>
+			</tr>
 
-        </tbody>
-    </table>
+		</thead>
+		<tbody id='reimb-table-body'>
+
+		</tbody>
+	</table>
+
+
+	<button type="button" class="btn btn-primary" onclick="getReimbs()">View All</button>
+	<button type="button" class="btn btn-primary" onclick="getReimbsByStatus(1)">View Pending</button>
+	<button type="button" class="btn btn-primary" onclick="getReimbsByStatus(2)">View Approved</button>
+	<button type="button" class="btn btn-primary" onclick="getReimbsByStatus(3)">View Denied</button>
+
+
 </body>
-	<script src="admin.js"></script>
+<script src="admin.js"></script>
 </html>

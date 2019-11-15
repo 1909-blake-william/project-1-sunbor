@@ -1,5 +1,6 @@
 let currentUser;
 let data;
+let currentView;
 
 function getReimbs(){
     document.getElementById('reimb-table-body').innerHTML = "";
@@ -13,6 +14,38 @@ function getReimbs(){
             console.log(data);
         })
         .catch(console.log)
+    
+    currentView = 0;
+}
+
+function getReimbsByStatus(statusId){
+    document.getElementById('reimb-table-body').innerHTML = "";
+	
+    const reimbId = 0;
+    const resolverId = 0;
+    
+	const upData = {
+			reimbId,
+			statusId,
+			resolverId
+	}
+    
+    fetch('http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/reimbursement/manager/filter', {
+        credentials: 'include',
+        method: 'POST',
+		body: JSON.stringify(upData),
+		headers: {
+            'content-type': 'application/json'
+        }
+    })
+        .then(resp => resp.json())
+        .then(data => {
+            data.forEach(addRow)
+            console.log(data);
+        })
+        .catch(console.log)
+	
+	currentView = statusId;
 }
 
 function addRow(reimb){
@@ -98,9 +131,20 @@ function setStatus(reimbId, statusId, ele){
 //        	console.log(data);
 //        })
 		.then(() => {
-			console.log('fetch successful')
-			getReimbs();
-			
+			console.log('fetch successful');
+			if(currentView === 0){
+				//getReimbs();
+				ele.childNodes[2].innerText = new Date();
+				ele.childNodes[5].innerText = currentUser.id;
+				ele.childNodes[6].innerText = statusId;
+				ele.childNodes[8].disabled = true;
+				ele.childNodes[9].disabled = true;
+			}
+			else{
+				//getReimbsByStatus(currentView);
+				  let i = ele.rowIndex;
+				  document.getElementById("reimb-table").deleteRow(i);
+			}
 		})
         .catch(console.log)
 }
