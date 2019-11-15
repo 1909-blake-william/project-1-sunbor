@@ -14,6 +14,7 @@ import com.revature.model.User;
 public class AuthServlet extends HttpServlet {
 	
 	private UserDao userDao = UserDao.currentImplementation;
+	private final ObjectMapper om = new ObjectMapper();
 	
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -33,7 +34,7 @@ public class AuthServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("uri = " + req.getRequestURI());
 		if ("/ReimbursementApplicationFourthTimesTheCharm/auth/login".equals(req.getRequestURI())) {
-			ObjectMapper om = new ObjectMapper();
+			//ObjectMapper om = new ObjectMapper();
 			User credentials = (User) om.readValue(req.getReader(), User.class);
 			User loggedInUser = userDao.findByUsernameAndPassword(credentials.getUsername(), credentials.getPassword());
 			if (loggedInUser == null) {
@@ -45,6 +46,10 @@ public class AuthServlet extends HttpServlet {
 				resp.getWriter().write(om.writeValueAsString(loggedInUser));
 				return;
 			}
+		}
+		if ("/ReimbursementApplicationFourthTimesTheCharm/auth/logout".equals(req.getRequestURI())) {
+			req.getSession().setAttribute("user", null);
+			resp.getWriter().write(om.writeValueAsString(null));
 		}
 	}
 	

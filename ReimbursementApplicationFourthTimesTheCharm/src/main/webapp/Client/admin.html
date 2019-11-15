@@ -28,12 +28,18 @@
 	</table>
 
 
-	<button type="button" class="btn btn-primary" onclick="getReimbs()">View All</button>
-	<button type="button" class="btn btn-primary" onclick="getReimbsByStatus(1)">View Pending</button>
-	<button type="button" class="btn btn-primary" onclick="getReimbsByStatus(2)">View Approved</button>
-	<button type="button" class="btn btn-primary" onclick="getReimbsByStatus(3)">View Denied</button>
+	<div>
+		<button type="button" class="btn btn-primary" onclick="getReimbs()">View All</button>
+		<button type="button" class="btn btn-primary" onclick="getReimbsByStatus(1)">View Pending</button>
+		<button type="button" class="btn btn-primary" onclick="getReimbsByStatus(2)">View Approved</button>
+		<button type="button" class="btn btn-primary" onclick="getReimbsByStatus(3)">View Denied</button>
+	</div>
+	<div>
+		<button type="button" class="btn btn-primary" onclick="logout(event)">Logout</button>
+	</div>
 
 
 </body>
 <script src="admin.js"></script>
+<script src="logout.js"></script>
 </html>
