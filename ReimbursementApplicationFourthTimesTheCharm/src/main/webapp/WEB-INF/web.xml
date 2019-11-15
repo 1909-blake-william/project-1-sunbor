@@ -20,6 +20,16 @@
 		<servlet-class>com.revature.servlet.ReimbursementServlet</servlet-class>
 	</servlet>
 
+	<servlet>
+		<servlet-name>LookupServlet</servlet-name>
+		<servlet-class>com.revature.servlet.LookupServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LookupServlet</servlet-name>
+		<url-pattern>/lookup/*</url-pattern>
+	</servlet-mapping>
+
 	<servlet-mapping>
 		<servlet-name>ReimbursementServlet</servlet-name>
 		<url-pattern>/reimbursement/*</url-pattern>

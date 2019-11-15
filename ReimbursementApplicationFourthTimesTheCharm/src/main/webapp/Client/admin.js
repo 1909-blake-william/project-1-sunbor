@@ -1,8 +1,61 @@
 let currentUser;
 let data;
 let currentView;
+let userMap = new Map();
+let statusMap = new Map();
+let typeMap = new Map();
+
+function getUserMap(){
+    fetch('http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/user', {
+        credentials: 'include'
+    })
+        .then(resp => resp.json())
+        .then(mapData => {
+            mapData.forEach(function(mapData) {
+            	console.log(mapData.id);
+            	console.log(mapData);
+            	let name = mapData.first_name + ' ' + mapData.last_name;
+            	userMap.set(mapData.id, name);
+            });
+            console.log('1');
+            console.log(userMap);
+        })
+        .catch(console.log)
+}
+
+function getStatusMap(){
+    fetch('http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/lookup/status', {
+        credentials: 'include'
+    })
+        .then(resp => resp.json())
+        .then(statusData => {
+            statusData.forEach(function(statusData) {
+            	statusMap.set(statusData.statusId, statusData.status);
+            });
+            console.log('2');
+            console.log(statusMap);
+        })
+        .catch(console.log)
+}
+
+function getTypeMap(){
+    fetch('http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/lookup/type', {
+        credentials: 'include'
+    })
+        .then(resp => resp.json())
+        .then(typeData => {
+            typeData.forEach(function(typeData) {
+            	typeMap.set(typeData.typeId, typeData.type);
+            });
+            console.log('3');
+            console.log('typeMap');
+            console.log(typeMap);
+        })
+        .catch(console.log)
+}
 
 function getReimbs(){
+	console.log('making table');
     document.getElementById('reimb-table-body').innerHTML = "";
 	
     fetch('http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/reimbursement/manager', {
@@ -41,7 +94,7 @@ function getReimbsByStatus(statusId){
         .then(resp => resp.json())
         .then(data => {
             data.forEach(addRow)
-            console.log(data);
+            //console.log(data);
         })
         .catch(console.log)
 	
@@ -68,19 +121,29 @@ function addRow(reimb){
     row.appendChild(descriptData);
 
     const authorData = document.createElement('td');
-    authorData.innerText = reimb.author;
+    //authorData.innerText = reimb.author;
+    let authorId = reimb.author;
+//    console.log(authorId);
+//    console.log(userMap.get(authorId));
+//    authorData.innerText = userMap.get(authorId).first_name + ' ' + userMap.get(authorId).last_name;
+    authorData.innerText = userMap.get(authorId);
     row.appendChild(authorData);
 
     const resolverData = document.createElement('td');
-    resolverData.innerText = reimb.resolver;
+    //resolverData.innerText = reimb.resolver;
+    let resolverId = reimb.resolver;
+    if(resolverId !== 0){
+    	//resolverData.innerText = userMap.get(resolverId).first_name + ' ' + userMap.get(resolverId).last_name;
+    	resolverData.innerText = userMap.get(resolverId);
+    }
     row.appendChild(resolverData);
 
     const statusData = document.createElement('td');
-    statusData.innerText = reimb.statusId;
+    statusData.innerText = statusMap.get(reimb.statusId);
     row.appendChild(statusData);
 
     const typeData = document.createElement('td');
-    typeData.innerText = reimb.typeId;
+    typeData.innerText = typeMap.get(reimb.typeId);
     row.appendChild(typeData);
         
     const approveButton = document.createElement('button');
@@ -101,13 +164,6 @@ function addRow(reimb){
     
     document.getElementById('reimb-table-body').appendChild(row);
         
-}
-
-function buttonTest(reimbId, statusId, ele){
-	console.log(reimbId);
-	console.log(statusId);
-	console.log(ele);
-	console.log(currentUser.id);
 }
 
 function setStatus(reimbId, statusId, ele){
@@ -134,9 +190,10 @@ function setStatus(reimbId, statusId, ele){
 			console.log('fetch successful');
 			if(currentView === 0){
 				//getReimbs();
-				ele.childNodes[2].innerText = new Date();
-				ele.childNodes[5].innerText = currentUser.id;
-				ele.childNodes[6].innerText = statusId;
+				ele.childNodes[2].innerText = new Date().getTime();
+				let resolverId = currentUser.id;
+				ele.childNodes[5].innerText = userMap.get(resolverId);
+				ele.childNodes[6].innerText = statusMap.get(statusId);
 				ele.childNodes[8].disabled = true;
 				ele.childNodes[9].disabled = true;
 			}
@@ -156,10 +213,10 @@ function getCurrentUserInfo() {
         credentials: 'include'
     })
     .then(resp => resp.json())
-    .then(data => {
+    .then(currentUserData => {
         // document.getElementById('users-name').innerText = data.username
         // refreshTable();
-        currentUser = data;
+        currentUser = currentUserData;
     	console.log(currentUser);
     	if(currentUser.role_id !== 1){
     		console.log('get out');
@@ -172,5 +229,25 @@ function getCurrentUserInfo() {
     })
 }
 
+//getCurrentUserInfo();
+//getUserMap();
+//getStatusMap();
+//getTypeMap();
+//getReimbs();
+
+//function setup(callback){
+//	getCurrentUserInfo();
+//	getUserMap();
+//	getStatusMap();
+//	getTypeMap();
+//	callback();
+//
+//}
+//
+//setup(getReimbs);
+
 getCurrentUserInfo();
-getReimbs();
+getUserMap();
+getStatusMap();
+getTypeMap();
+setTimeout(getReimbs, 500);

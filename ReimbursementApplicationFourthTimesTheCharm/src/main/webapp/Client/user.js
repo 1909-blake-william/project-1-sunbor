@@ -1,4 +1,56 @@
 let currentUser;
+let userMap = new Map();
+let statusMap = new Map();
+let typeMap = new Map();
+
+function getUserMap(){
+    fetch('http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/user', {
+        credentials: 'include'
+    })
+        .then(resp => resp.json())
+        .then(mapData => {
+            mapData.forEach(function(mapData) {
+            	console.log(mapData.id);
+            	console.log(mapData);
+            	let name = mapData.first_name + ' ' + mapData.last_name;
+            	userMap.set(mapData.id, name);
+            });
+            console.log('1');
+            console.log(userMap);
+        })
+        .catch(console.log)
+}
+
+function getStatusMap(){
+    fetch('http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/lookup/status', {
+        credentials: 'include'
+    })
+        .then(resp => resp.json())
+        .then(statusData => {
+            statusData.forEach(function(statusData) {
+            	statusMap.set(statusData.statusId, statusData.status);
+            });
+            console.log('2');
+            console.log(statusMap);
+        })
+        .catch(console.log)
+}
+
+function getTypeMap(){
+    fetch('http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/lookup/type', {
+        credentials: 'include'
+    })
+        .then(resp => resp.json())
+        .then(typeData => {
+            typeData.forEach(function(typeData) {
+            	typeMap.set(typeData.typeId, typeData.type);
+            });
+            console.log('3');
+            console.log('typeMap');
+            console.log(typeMap);
+        })
+        .catch(console.log)
+}
 
 function getReimbs(){
     fetch('http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/reimbursement/employee', {
@@ -27,7 +79,7 @@ function newReimb(event){
     })
     .then(res => res.json())
     .then(data => {
-        addRow(reimb);
+        addRow(data);
         console.log(data);
     })
     .catch(err => console.log(err));
@@ -41,7 +93,7 @@ function readReimbInput(){
     const reimb = {
         id: 0,
         amount: reimbAmount,
-        submitted: new Date(),
+        submitted: new Date().getTime(),
         resolved: null,
         description: reimbDescription,
         receipt: null,
@@ -73,20 +125,24 @@ function addRow(reimb){
     descriptData.innerText = reimb.description;
     row.appendChild(descriptData);
 
-    const authorData = document.createElement('td');
-    authorData.innerText = reimb.author;
-    row.appendChild(authorData);
-
     const resolverData = document.createElement('td');
-    resolverData.innerText = reimb.resolver;
+    //resolverData.innerText = reimb.resolver;
+    let resolverId = reimb.resolver;
+    if(resolverId !== 0){
+    	//resolverData.innerText = userMap.get(resolverId).first_name + ' ' + userMap.get(resolverId).last_name;
+    	resolverData.innerText = userMap.get(resolverId);
+    }
+    else{
+    	resolverData.innerText = null;
+    }
     row.appendChild(resolverData);
 
     const statusData = document.createElement('td');
-    statusData.innerText = reimb.statusId;
+    statusData.innerText = statusMap.get(reimb.statusId);
     row.appendChild(statusData);
 
     const typeData = document.createElement('td');
-    typeData.innerText = reimb.typeId;
+    typeData.innerText = typeMap.get(reimb.typeId);
     row.appendChild(typeData);
 
     document.getElementById('reimb-table-body').appendChild(row);
@@ -113,5 +169,24 @@ function getCurrentUserInfo() {
     })
 }
 
+//getCurrentUserInfo();
+//getUserMap();
+//getStatusMap();
+//getTypeMap();
+//getReimbs();
+
+//function setup(callback){
+//	getCurrentUserInfo();
+//	getUserMap();
+//	getStatusMap();
+//	getTypeMap();
+//	callback();
+//}
+//
+//setup(getReimbs);
+
 getCurrentUserInfo();
-getReimbs();
+getUserMap();
+getStatusMap();
+getTypeMap();
+setTimeout(getReimbs, 500);

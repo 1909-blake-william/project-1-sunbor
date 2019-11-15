@@ -15,6 +15,7 @@ import com.revature.model.User;
 public class UserServlet extends HttpServlet {
 	
 	private UserDao userDao = UserDao.currentImplementation;
+	private final ObjectMapper om = new ObjectMapper();
 	
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -36,7 +37,7 @@ public class UserServlet extends HttpServlet {
 		
 		userList = userDao.getAllUsers();
 		
-		ObjectMapper om = new ObjectMapper();
+		//ObjectMapper om = new ObjectMapper();
 		String json = om.writeValueAsString(userList);
 		
 		resp.addHeader("content-type", "application/json");
