@@ -38,7 +38,7 @@ public class ReimbursementDaoSQL implements ReimbursementDao {
 	@Override
 	public List<Reimbursement> getAllReimb() {
 		try(Connection c = ConnectionUtil.getConnection()){
-			String sql = "SELECT * FROM reimbursement";
+			String sql = "SELECT * FROM reimbursement ORDER BY reimb_submitted";
 			PreparedStatement ps = c.prepareStatement(sql);
 			
 			ResultSet rs = ps.executeQuery();
@@ -80,7 +80,7 @@ public class ReimbursementDaoSQL implements ReimbursementDao {
 	@Override
 	public List<Reimbursement> getReimbByUser(int userId) {
 		try(Connection c = ConnectionUtil.getConnection()){
-			String sql = "SELECT * FROM reimbursement WHERE reimb_author = ?";
+			String sql = "SELECT * FROM reimbursement WHERE reimb_author = ? ORDER BY reimb_submitted";
 			PreparedStatement ps = c.prepareStatement(sql);
 			ps.setInt(1, userId);
 			
@@ -103,7 +103,7 @@ public class ReimbursementDaoSQL implements ReimbursementDao {
 	@Override
 	public List<Reimbursement> getReimbByStatus(int statusId) {
 		try(Connection c = ConnectionUtil.getConnection()){
-			String sql = "SELECT * FROM reimbursement WHERE reimb_status_id = ?";
+			String sql = "SELECT * FROM reimbursement WHERE reimb_status_id = ? ORDER BY reimb_submitted";
 			PreparedStatement ps = c.prepareStatement(sql);
 			ps.setInt(1, statusId);
 			
