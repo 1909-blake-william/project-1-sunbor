@@ -1,6 +1,9 @@
 let currentUser;
+let data;
 
 function getReimbs(){
+    document.getElementById('reimb-table-body').innerHTML = "";
+	
     fetch('http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/reimbursement/manager', {
         credentials: 'include'
     })
@@ -49,31 +52,56 @@ function addRow(reimb){
         
     const approveButton = document.createElement('button');
     approveButton.innerText = 'approve';
-    approveButton.setAttribute('onclick', `buttonTest(${reimb.id}, 2, this.parentElement)`);
+    approveButton.setAttribute('onclick', `setStatus(${reimb.id}, 2, this.parentElement)`);
+    if(reimb.statusId !== 1){
+    	approveButton.disabled = true;
+    }
     row.appendChild(approveButton);
     
+    const denyButton = document.createElement('button');
+    denyButton.innerText = 'deny';
+    denyButton.setAttribute('onclick', `setStatus(${reimb.id}, 3, this.parentElement)`);
+    if(reimb.statusId !== 1){
+    	denyButton.disabled = true;
+    }
+    row.appendChild(denyButton);
+    
     document.getElementById('reimb-table-body').appendChild(row);
+        
 }
 
 function buttonTest(reimbId, statusId, ele){
 	console.log(reimbId);
 	console.log(statusId);
 	console.log(ele);
+	console.log(currentUser.id);
 }
 
 function setStatus(reimbId, statusId, ele){
+	const resolverId = currentUser.id;
+	const upData = {
+			reimbId,
+			statusId,
+			resolverId
+	}
+	
 	fetch(`http://localhost:8080/ReimbursementApplicationFourthTimesTheCharm/reimbursement/manager/${reimbId}/${statusId}`, {
 		credentials: 'include',
-		method: 'PATCH',
-		body: JSON.stringify(currentUser.id),
+		method: 'PUT',
+		body: JSON.stringify(upData),
 		headers: {
             'content-type': 'application/json'
         }
 	})
-        .then(resp => resp.json())
-        .then(data => {
-        	
-        })
+//        .then(resp => resp.json())
+//        .then(data => {
+//        	console.log(data);
+//        })
+		.then(() => {
+			console.log('fetch successful')
+			getReimbs();
+			
+		})
         .catch(console.log)
 }
 

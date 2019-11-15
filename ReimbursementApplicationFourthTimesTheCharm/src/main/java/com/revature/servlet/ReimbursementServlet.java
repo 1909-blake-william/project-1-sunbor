@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.dao.ReimbursementDao;
 import com.revature.model.Reimbursement;
+import com.revature.model.UpdateData;
 import com.revature.model.User;
 
 public class ReimbursementServlet extends HttpServlet {
@@ -72,6 +73,18 @@ public class ReimbursementServlet extends HttpServlet {
 		
 		resp.getWriter().write(json);
 		resp.setStatus(201);
+		
+	}
+	
+	@Override
+	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("patch request");
+		
+		ObjectMapper om = new ObjectMapper();
+		
+		UpdateData upData = om.readValue(req.getReader(), UpdateData.class);
+		reimbDao.setStatus(upData.getReimbId(), upData.getStatusId(), upData.getResolverId());
+		
 		
 	}
 }

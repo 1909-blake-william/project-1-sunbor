@@ -19,10 +19,10 @@ public interface ReimbursementDao {
 	
 	List<Reimbursement> getReimbByStatus(int statusId);
 	
-	int approve(Reimbursement r);
+	int approve(int reimbId);
 	
-	int deny(Reimbursement r);
+	int deny(int reimbId);
 	
-	int setStatus(Reimbursement r, int statusId);
+	int setStatus(int reimbId, int statusId, int resolverId);
 
 }

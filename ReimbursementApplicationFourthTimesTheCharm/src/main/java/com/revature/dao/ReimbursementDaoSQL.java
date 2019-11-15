@@ -123,19 +123,35 @@ public class ReimbursementDaoSQL implements ReimbursementDao {
 	}
 
 	@Override
-	public int approve(Reimbursement r) {
+	public int approve(int reimbId) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int deny(Reimbursement r) {
+	public int deny(int reimbId) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int setStatus(Reimbursement r, int statusId) {
+	public int setStatus(int reimbId, int statusId, int resolverId) {
+		try(Connection c = ConnectionUtil.getConnection()){
+			String sql = "UPDATE reimbursement SET "
+					+ "reimb_resolved = CURRENT_TIMESTAMP, "
+					+ "reimb_resolver = ?, "
+					+ "reimb_status_id = ? WHERE reimb_id = ?";
+			
+			PreparedStatement ps = c.prepareStatement(sql);
+			ps.setInt(1, resolverId);
+			ps.setInt(2, statusId);
+			ps.setInt(3, reimbId);
+			
+			return ps.executeUpdate();
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
 		// TODO Auto-generated method stub
 		return 0;
 	}
